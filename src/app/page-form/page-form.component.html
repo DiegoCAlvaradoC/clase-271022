@@ -1,0 +1,78 @@
+<div class="cart__container">
+    <h1 class="cart__title">Detalle de la Compra</h1>
+    <table class="cart__table">
+        <thead class="table__header">
+            <th></th>
+            <th>Producto</th>
+            <th>Precio</th>
+            <th>Descuento</th>
+            <th>Total</th>
+            <th></th>
+        </thead>
+        <tr>
+            <td class="cart__image cell--center"><img src={{imagePath}}></td>
+            <td class="cart__name cell--center">{{name}}</td>
+            <td class="cell--center">$. {{price | number: '.2'}}</td>
+            <td class="cell--center">% {{discount}}.0</td>
+            <td class="cell--center">$. {{total | number: '.2'}}</td>
+        </tr>
+
+    </table>
+    <h1 class="cart__title">Datos del Cliente</h1>
+    
+    <div class="mx-auto">
+            <div class="container-80">
+    
+                    <form [formGroup]="formularioUno">
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="fname">Nombre y Apellidos</label>
+                            </div>
+                            <div class="col-75">
+                                <input 
+                                  type="text" 
+                                  class="form-control"
+                                  formControlName="nombre">
+                            </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-25">
+                                    <label for="fname">Correo</label>
+                                </div>
+                                <div class="col-75">
+                                    <input 
+                                      type="text" 
+                                      class="form-control"
+                                      formControlName="correo">
+                                </div>
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="col-25">
+                                        <label for="fname">Numero</label>
+                                    </div>
+                                    <div class="col-75">
+                                        <input 
+                                          type="number" 
+                                          class="form-control"
+                                          formControlName="numero">
+                                    </div>
+                                    </div>
+                                <div class="row">
+                                <div class="col-25">
+                                    <label for="subject">Dirección</label>
+                                </div>
+                                <div class="col-75">
+                                    <input 
+                                        type="text"  
+                                        class="form-control" 
+                                        formControlName="direccion">
+                                </div>
+                                </div>
+                                    
+                            <div class="mx-auto">
+                                <button mat-raised-button color="accent" (click)="sent()">enviar</button>
+                        </div>
+                        </form>
+        </div>
+    </div>

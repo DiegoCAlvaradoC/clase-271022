@@ -1,0 +1,60 @@
+
+<div class="mx-auto">
+    <h1 class="title-1">Contactanos</h1>
+    </div>
+        <!-- Text-1 -->
+        <div class="mx-auto">
+        <div class="container-80">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30604.129662922503!2d-68.16668988437496!3d-16.500016999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915f207051223783%3A0x904e56d2c841c19e!2sEl%20Diario!5e0!3m2!1ses-419!2sbo!4v1663860216785!5m2!1ses-419!2sbo" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="container-80">
+    
+                    <form [formGroup]="formularioUno">
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="fname">Nombre y Apellidos</label>
+                            </div>
+                            <div class="col-75">
+                                <input 
+                                  type="text" 
+                                  class="form-control"
+                                  formControlName="nombre">
+                            </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-25">
+                                    <label for="fname">Correo</label>
+                                </div>
+                                <div class="col-75">
+                                    <input 
+                                      type="text" 
+                                      class="form-control"
+                                      formControlName="correo">
+                                </div>
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="col-25">
+                                        <label for="fname">Numero</label>
+                                    </div>
+                                    <div class="col-75">
+                                        <input 
+                                          type="number" 
+                                          class="form-control"
+                                          formControlName="numero">
+                                    </div>
+                                    </div>
+                                <div class="row">
+                                <div class="col-25">
+                                    <label for="subject">Mensaje</label>
+                                </div>
+                                <div class="col-75">
+                                    <textarea id="mensaje" name="mensaje" placeholder="Escriba su mensaje..." style="height: 150px"></textarea>
+                                </div>
+                                </div>
+                                    
+                            <div class="mx-auto">
+                                <button mat-raised-button color="accent" (click)="sent()">enviar</button>
+                        </div>
+                        </form>
+        </div>
+    </div>

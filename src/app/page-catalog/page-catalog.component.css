@@ -1,0 +1,39 @@
+.product-card {
+    width: 300px;
+}
+
+.product-card__title {
+    text-align: center;
+}
+
+.product-card__price {
+    text-align: center;
+}
+
+.product-card__image {
+    height: 300px;
+    object-fit: cover;
+}
+
+.product-card__button {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.product-card__offer {
+    background-color: #3ffcfc;
+    color: #FFFFFF;
+    display: block;
+    text-align: center;
+    width: 100%;
+
+}
+
+.category {
+    text-align: center;
+    color: #110f10;
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 2cm;
+}
